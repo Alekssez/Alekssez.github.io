@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<link rel="stylesheet" type="text/css"href="main.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Dashboard</title>
+</head>
+<h1>Dashboard</h1>
+<body>
+  <div class="body">
+<table>
+<tr>
+<th>Quartile</th>
+<th>Course</th>
+<th>EC</th>
+<th>Exam</th>
+<th>Grade</th>
+</tr>
+<tr>
+<td rowspan=3> 1 </td>
+<td>Program & Career Orientation
+</td>
+<td>2.5</td>
+<td>Assesment</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Computer Science & Basics</td>
+<td>5</td>
+<td>Written</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Programming Basics</td>
+<td>5 </td>
+<td>Case study</td>
+<td>N/A</td>
+</tr> 
+<tr>
+<td rowspan="2">2 </td>
+<td rowspan=2>Object Oriented
+Programming</td>
+<td rowspan=2>10</td>
+<td>Case study (50%)</td>
+<td rowspan="2">N/A</td>
+</tr>
+<tr>
+<td>Project (50%)</td>
+</tr>
+<tr>
+<td rowspan=4>3</td>
+<td>Framework Development 1</td>
+<td>5</td>
+<td> Case study</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td rowspan=3>Framework Project 1</td>
+<td rowspan=3>7.5</td>
+<td>Project (33%)
+</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Case study exam (33%)</td>
+</tr>
+<td>Report(33%)</td>
+</tr>
+<tr>
+<td rowspan="3">4</td>
+<td rowspan="3">Framework Project 2</td>
+<td rowspan="3">10</td>
+<td>Portfolio (50%)</td>
+<td rowspan="3">N/A</td>
+</tr>
+<tr>
+<td>Project (25%)</td>
+</tr>
+<tr>
+<td>Assessment (25%)</td>
+</tr>
+<tr>
+<td>The entire year</td>
+<td>Personal Professional Development</td>
+<td>12.5</td>
+<td>Portfolio</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td rowspan="2">Whenever</td>
+<td>Personality 1</td>
+<td>2.5</td>
+<td>Portfolio</td>
+<td rowspan="2">N/A</td>
+</tr>
+<tr>
+<td>Personality 2</td>
+<td>2.5</td>
+<td>Portfolio</td>
+</tr>
+</table>
+<ul>
+<li><a href="http://localhost/blog.html">Blog</a></li>
+<li><a href="http://localhost/faq.html">FAQ</a></li>
+<li><a href="http://localhost/dboard.html">Dashboard</a></li>
+<li style="float:right"><a href="http://localhost/home.html">Home</a></li>
+<li><a href="http://localhost/profile.html">Profile</a></li>
+</ul>
+<div class="progress">
+<div class="progress__fill"></div>
+<span class="progress__text">0EC</span>
+</div>
+</div>
+</body>
+<script>
+function updateProgressBar(progressBar, value) {
+value = Math.round(value);
+progressBar.querySelector(".progress__fill").style.width = `${value}%`;
+progressBar.querySelector(".progress__text").textContent = `${value}EC`;
+}
+
+const myProgressBar = document.querySelector(".progress");
+</script>
+<p><b>NBSA - Negatief Bindend Studieadvies</b></p>
+<p><b>If you get one, you must stop the programme...</b></p>
+<p><b>Boundary is at 45 EC at the end of the propaedeutic year</b></p>
+<img class="imgg" src=".//img/download.png">
+</html>
